@@ -206,7 +206,7 @@ for _sec, _tks in SP500_SECTORS.items():
 IV_PROXY_WINDOW = 21     # ~1 calendar month
 
 # --- Transaction costs (basis points per leg, one-way) ----------------------
-TC_BPS = 0               # 0 bps per leg (frictionless model)
+TC_BPS = 5               # 5 bps per leg (frictionless model)
 
 # --- Signal-strength filtering (trade-limiting) -----------------------------
 MAX_NEW_ENTRIES_PER_DAY = 5     # K: max new positions opened per day
