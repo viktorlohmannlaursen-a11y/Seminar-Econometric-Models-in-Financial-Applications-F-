@@ -874,7 +874,7 @@ def process_pair_oos(pairs_df_filtered: pd.DataFrame,
             zt = z.iloc[j]
             ot = open_thresh.iloc[j]
             if not np.isnan(sc) and sc <= 0:
-                trigger[j] = 0         # close condition
+                trigger[j] = -1         # close condition
             elif zt > ot:
                 trigger[j] = 1         # open condition
             # else: NaN → hold
